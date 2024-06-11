@@ -4,7 +4,7 @@ import { Box, Button, Card, CardActions, CardContent, Typography } from "@mui/ma
 const projectsData = [
     {title: 'Proyecto 1', description: 'Este es un proyecto de una pagina web de una concesionaria', githubLink: 'https://github.com/JessiRomi/proyecto-de-its-motors'},
     {title: 'Proyecto 2', description: 'Este es un proyecto de una pagina web que muestra un santo grial', githubLink:'https://github.com/euge1982/Trabajo-1-Laboratorio2'},
-    {title: 'Proyecto 1', description: 'Este es un proyecto de una pagina web de un Portfolio', githubLink:'https://github.com/euge1982/Trabajo2-laboratorio'},
+    {title: 'Proyecto 1', description: 'Este es un proyecto de una pagina web de un Portfolio', githubLink:'https://github.com/euge1982/Trabajo-2-Laboratorio2.git'},
 ];
 
 const Projects = () => {
