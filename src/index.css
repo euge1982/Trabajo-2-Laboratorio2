@@ -1,0 +1,114 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*place-items: center;*/ 
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  width: 100%;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex: 1;
+  padding: 20px;
+}
+
+/*Estilos para el Header*/
+.header{
+  background-color:#f187c5;
+  align-items: center;
+}
+
+.header-toolbar{
+  display: flex;
+  justify-content: center;
+}
+
+.header-title{
+  text-align: center;
+}
+
+/*Estilos para el contenedor AboutMe*/
+.about-me{
+  border-top: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.foto{
+  width: 350px;
+  height: 350px;
+}
+
+.about-me-text{
+  margin-top: 10px;
+}
+
+/*Estilos para el contenedor de proyectos*/
+.projects-container{
+  padding: 20px;
+  border-top: 1px rgb(136, 135, 135) solid;
+  border-bottom: 1px rgb(136, 135, 135) solid;
+}
+
+.project-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*Responsivo para el contenedor de proyectos*/
+@media (min-width: 600px) {
+  .project-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .project-card{
+    width: calc(50% - 20px); /*Dos columnas en pantallas grandes*/
+  }
+}
+
+@media (min-width: 900px) {
+  .project-card{
+    width: calc(33.33% - 20px); /*Tres columnas en pantallas grandes*/
+  }
+}
+
+/*Estilos para el contenedor de proyectos*/
+.contact-container{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item{
+  margin-bottom: 10px;
+}
+
+/*Estilos para el pie de pagina*/
+.footer{
+  background-color: #f187c5;
+  padding: 10px 0;
+  text-align: center;
+}
+
+button{
+  background-color: #f187c5;
+  color: white;
+}
